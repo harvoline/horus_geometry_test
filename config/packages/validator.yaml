@@ -1,0 +1,33 @@
+framework:
+    validation:
+        email_validation_mode: html5
+
+        # Enables validator auto-mapping support.
+        # For instance, basic validation constraints will be inferred from Doctrine's metadata.
+        # auto_mapping:
+        #     App\Entity\Circle:
+        #         properties:
+        #             radius:
+        #                 - Type:
+        #                     type: digit
+        #                     message: must be a valid number
+        #     App\Entity\Triangle:
+        #         properties:
+        #             side_a:
+        #                 - Type:
+        #                     type: digit
+        #                     message: must be a valid number (side_a)
+        #             side_b:
+        #                 - Type:
+        #                     type: digit
+        #                     message: must be a valid number (side_b)
+        #             side_c:
+        #                 - Type:
+        #                     type: digit
+        #                     message: must be a valid number (side_c)
+        
+
+when@test:
+    framework:
+        validation:
+            not_compromised_password: false

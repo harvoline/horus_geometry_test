@@ -1,0 +1,19 @@
+triangle:
+    path: /triangle/{side_a}/{side_b}/{side_c}
+    controller: App\Controller\ShapeController::triangle
+    methods: [GET]
+
+circle:
+    path: /circle/{radius}
+    controller: App\Controller\ShapeController::circle
+    methods: [GET]
+
+sum_area:
+    path: /sum_area
+    controller: App\Controller\ShapeController::sumArea
+    methods: [GET]
+
+sum_diameter:
+    path: /sum_diameter
+    controller: App\Controller\ShapeController::sumDiameter
+    methods: [GET]
